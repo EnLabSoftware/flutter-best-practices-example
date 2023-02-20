@@ -84,9 +84,10 @@ class _StoryViewState extends State<StoryView> {
     );
   }
 
-	Widget buildContent(List<Story> data) => const Center(child: Text('Content'));
+  Widget buildContent(List<Story> data) => const Center(child: Text('Content'));
 
-  Widget get loadingView => const Center(child: CircularProgressIndicator.adaptive());
+  Widget get loadingView =>
+      const Center(child: CircularProgressIndicator.adaptive());
 
   Widget get errorView => const Center(child: Text('Error'));
 

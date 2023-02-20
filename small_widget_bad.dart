@@ -8,24 +8,24 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-	// Call API
+  // Call API
   List<Category> categories = List<Category>.generate(5, (index) => Category());
 
-	// Call API
+  // Call API
   List<SuggestedFood> suggestedFoods =
       List<SuggestedFood>.generate(5, (index) => SuggestedFood());
 
-	// Call API
+  // Call API
   List<ExploreDrink> exploreDrinks =
       List<ExploreDrink>.generate(6, (index) => ExploreDrink());
 
-	// Call API
-	List<Coupon> coupons = List<Coupon>.generate(5, (index) => Coupon());
+  // Call API
+  List<Coupon> coupons = List<Coupon>.generate(5, (index) => Coupon());
 
   void handleQuickNavigationEvent() {}
   void handleUserStatusAndPointEvent() {}
   void handleCouponsEvent() {}
-	void handleSuggestedFoodsEvent() {}
+  void handleSuggestedFoodsEvent() {}
 
   @override
   Widget build(BuildContext context) {
